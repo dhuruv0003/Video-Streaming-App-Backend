@@ -14,4 +14,4 @@ app.use(cookieParser());     // for parsing cookies
 app.use(express.urlencoded({extended:true})); // for parsing application/x-www-form-urlencoded
 app.use(express.static('public')); // for serving static files
 
-export {app};
+export default app;

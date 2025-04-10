@@ -11,7 +11,7 @@
 //     }
 // }
 
-//using promises
+//using promises instead of try catch
 
 const asyncHandler = (fun) => (req, res, next) => {
   Promise.resolve(fun(req, res, next)).catch((error) => next(error)); // code is directly passed to next middleware

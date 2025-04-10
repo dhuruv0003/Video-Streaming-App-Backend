@@ -1,4 +1,4 @@
-// using try catch 
+// using try catch
 
 // const asyncHandler = (fun)=>async(req,res,next)=>{
 //     try {
@@ -11,15 +11,14 @@
 //     }
 // }
 
-
 //using promises
 
-const asyncHandler= (fun)=>(req,res,next)=>{
-    Promise.resolve(fun(req,res,next)).catch((error)=>next(error)); // code is directly passed to next middleware
-}
+const asyncHandler = (fun) => (req, res, next) => {
+  Promise.resolve(fun(req, res, next)).catch((error) => next(error)); // code is directly passed to next middleware
+};
 
-// const asyncHandler =(fun)=>{
-    
-// }
+
 
 export default asyncHandler;
+
+

@@ -10,7 +10,7 @@
 //         })
 //     }
 // }
-
+ 
 //using promises instead of try catch
 
 const asyncHandler = (fun) => (req, res, next) => {

@@ -31,7 +31,7 @@ const registerUser=asyncHandler(async (req,res)=>{
                 throw new ApiError(409,"User Already exists");
             }
 
-            
+             
 
     } catch (error) {
         console.error(error);
